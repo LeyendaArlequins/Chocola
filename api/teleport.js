@@ -47,7 +47,7 @@ module.exports = async (req, res) => {
 
             return res.status(200).json({
                 success: true,
-                message: '✅ API con sistema de cola - DATOS COMPLETOS',
+                message: 'Api lista',
                 queueLength: teleportQueue.length,
                 activeServers: activeServers, 
                 timestamp: new Date().toISOString()
@@ -84,7 +84,7 @@ module.exports = async (req, res) => {
                         placeId, 
                         gameInstanceId,
                         animal: animalData?.displayName,
-                        generation: animalData?.generation, // ✅ Log de generation
+                        generation: animalData?.generation, 
                         value: animalData?.value,
                         rarity: animalData?.rarity,
                         queuePosition: teleportQueue.length
